@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.konten {
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto; 
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tombol {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.layout-biodata {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+}
+
+.foto-profil {
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 3 / 4; 
+    object-fit: cover;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.galeri-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 15px;
+}
+
+.foto-liburan {
+    flex: 1 1 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.foto-liburan img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.input-grup {
+    margin-bottom: 15px;
+}
+
+.input-grup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-grup input, .input-grup textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+.btn-kirim {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .layout-biodata {
+        grid-template-columns: 1fr; 
+    }
+    
+    nav a {
+        display: block; 
+        margin-top: 10px;
+    }
+}
